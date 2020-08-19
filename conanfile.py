@@ -11,7 +11,7 @@ class SigslotConan(ConanFile):
     author = "https://github.com/palacaze/sigslot/graphs/contributors"
     url = "https://github.com/palacaze/sigslot.git"
     description = "header-only, thread safe implementation of signal-slots for C++"
-	no_copy_source = True
+    no_copy_source = True
     exports = "*"
 
     def source(self):
