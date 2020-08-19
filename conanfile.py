@@ -15,7 +15,7 @@ class SigslotConan(ConanFile):
     exports = "*"
 
     def source(self):
-        self.run("git clone %s %s" % (self.source_url, self.name))
+        self.run("git clone %s %s" % (self.url, self.name))
         self.run("cd %s && git checkout" % (self.name))
 
     def package(self):
