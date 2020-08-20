@@ -1,6 +1,6 @@
 # conan-sigslot
 
-Conan recipe for enet
+Conan recipe for sigslot
 
 To create a package and upload it:
 
