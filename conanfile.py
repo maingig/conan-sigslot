@@ -12,14 +12,13 @@ class SigslotConan(ConanFile):
     url = "https://github.com/palacaze/sigslot.git"
     description = "header-only, thread safe implementation of signal-slots for C++"
     no_copy_source = True
-    exports_sources = "include/*", "CMakelists.txt", "example/*"
 
     def source(self):
         self.run("git clone %s %s" % (self.url, self.name))
         self.run("cd %s && git checkout" % (self.name))
 
     def package(self):
-        self.copy("*.h")
+        self.copy("*.hpp", src=self.name)
 
     def package_id(self):
         self.info.header_only()
